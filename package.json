@@ -1,0 +1,36 @@
+{
+  "name": "node-farm",
+  "version": "1.0.0",
+  "description": "Learning node.js",
+  "license": "ISC",
+  "author": "Meloi Magpantay",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx nodemon server.js",
+    "start:prod": "cross-env NODE_ENV=production node server.js",
+    "debug": "cross-env NODE_ENV=production  ndb server.js"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "bcryptjs": "^3.0.3",
+    "dotenv": "^7.0.0",
+    "express": "^4.22.1",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^8.3.2",
+    "helmet": "^8.1.0",
+    "hpp": "^0.2.3",
+    "jsonwebtoken": "^9.0.3",
+    "morgan": "^1.10.1",
+    "nodemailer": "^8.0.4",
+    "nodemon": "^3.1.14",
+    "pug": "^3.0.3",
+    "slugify": "^1.6.8",
+    "xss-clean": "^0.1.4"
+  },
+  "devDependencies": {
+    "cross-env": "^10.1.0",
+    "mongodb": "^7.1.0",
+    "mongoose": "^9.2.4"
+  }
+}
