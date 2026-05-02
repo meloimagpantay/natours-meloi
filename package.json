@@ -7,9 +7,13 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js",
     "dev": "npx nodemon server.js",
     "start:prod": "cross-env NODE_ENV=production node server.js",
     "debug": "cross-env NODE_ENV=production  ndb server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   },
   "dependencies": {
     "bcrypt": "^6.0.0",
